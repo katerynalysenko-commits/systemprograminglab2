@@ -80,7 +80,7 @@ vector<Token> lexAnalyze(const string& code) {
     while (true) {
         Token t = nextToken(code, pos);
         if (t.type == TokenType::END) break;
-        result.push_back(t); // тепер НЕ відкидаємо коментарі
+        result.push_back(t);
     }
     return result;
 }
